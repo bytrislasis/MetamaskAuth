@@ -1,0 +1,24 @@
+{
+  "name": "metamask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bytrislasis/MetamaskAuth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bytrislasis/MetamaskAuth/issues"
+  },
+  "homepage": "https://github.com/bytrislasis/MetamaskAuth#readme",
+  "dependencies": {
+    "socket.io": "^4.4.1",
+    "web3": "^1.7.1"
+  }
+}
