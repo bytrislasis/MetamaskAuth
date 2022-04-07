@@ -12,7 +12,10 @@
         <button class="btn mt-5" style="background-color: black; color: white; font-weight: bold" id="auth"> Metamask With Connection</button>
 
         <p class="mt-5">
-            <span id="sonuc">asdasd</span>
+            <span id="sonuc1"></span>
+        </p>
+        <p class="mt-5">
+            <span id="sonuc2"></span>
         </p>
     </div>
 </div>
@@ -25,9 +28,15 @@
     }
 
     document.getElementById('auth').addEventListener('click', function () {
+        let mesaj = document.getElementById('mesaj').value;
+
         window.ethereum.request({method: "eth_requestAccounts"}).then(function (accounts) {
-            console.log(accounts);
-            document.getElementById('sonuc').innerHTML = accounts[0];
+            document.getElementById('sonuc1').innerHTML = accounts[0];
+
+            ethereum.request({method: "personal_sign", params: [mesaj, accounts[0]]}).then(function (result) {
+                document.getElementById('sonuc2').innerHTML = result;
+            });
+
         });
     });
 
