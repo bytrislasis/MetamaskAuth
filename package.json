@@ -19,6 +19,6 @@
   "homepage": "https://github.com/bytrislasis/MetamaskAuth#readme",
   "dependencies": {
     "socket.io": "^4.4.1",
-    "web3": "^1.7.1"
+    "web3": "^1.7.3"
   }
 }
